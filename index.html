@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Treact</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
-    integrity="sha384-AYmEC3Yw5cVb3ZcuHt0A93w35dYTsvhLPVnYs9eStHfGJv0vKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="">
+    <script src="https://kit.fontawesome.com/5d11f85abe.js" crossorigin="anonymous"></script>
     <script src="script.js"></script>
 </head>
 
@@ -17,8 +17,9 @@
             <div class="row nav__row">
                 <div class="nav__logo">
                 <img class="nav__logo--img" src="logo.2c489fc453a1783cbadacf914efa3df6.svg" alt="logo">
-                </div>
                 <div class="nav__logo--title">Treact</div>
+            </div>
+                
             </div>
             <div class="nav__links">
                 <a href="#" class="nav__link">About</a>
@@ -49,12 +50,12 @@
             </svg>
             </button>
             <div class="modal links">
-                <a class="modal__link">About</a>
-                <a class="modal__link">Blog</a>
-                <a class="modal__link">Pricing</a>
-                <a class="modal__link">Contact Us</a>
-                <a class="modal__link">Login</a>
-                <a class="modal__link modal__link--primary">Sign Up</a>
+                <a href="#About" class="modal__link" onclick="closeMenu()">About</a>
+                <a href="#Blog" class="modal__link" onclick="closeMenu()">Blog</a>
+                <a href="#Pricing" class="modal__link" onclick="closeMenu()">Pricing</a>
+                <a href="#Contact Us" class="modal__link" onclick="closeMenu()">Contact Us</a>
+                <a href="#Login" class="modal__link" onclick="closeMenu()">Login</a>
+                <a href="#Sign Up" class="modal__link modal__link--primary" onclick="closeMenu()">Sign Up</a>
             </div>
         </div>
         <header>
@@ -62,7 +63,7 @@
                 <div class="row">
                     <div class="header__description">
                         <h1> 
-                            Beautiful React Templates <span style="color: purple;">For You.</span>
+                            Beautiful React Templates <span style="color: #6415ff;">For You.</span>
                         </h1>
                         <p class="header__description--para">
                             Our templates are easy to setup, understand and customize. Fully modular components with a variety of pages and components.
@@ -87,7 +88,7 @@
                 <div class="row__narrow">
                     <h4 class="section__tag">FEATURES</h4>
                     <h2 class="section__title">
-                        We Have Amazing <span style="color: purple">Service.</span>
+                        We Have Amazing <span style="color: #6415ff">Service.</span>
                     </h2>
                     <div class="section__para">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -181,7 +182,7 @@
                     <div class="quality__description">
                         <div class="section__tag">QUALITY WORK</div>
                         <h2 class="section__title">
-                            Designed & Developed by <span style="color: purple;">Professionals.</span>
+                            Designed & Developed by <span style="color: #6415ff;">Professionals.</span>
                         </h2>
                         <p class="section__para">
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim quam cupiditate commodi qui excepturi laborum adipisci officiis, corporis possimus. Reiciendis?
@@ -203,7 +204,7 @@
                     <div class="steps__description">
                         <div class="section__tag">STEPS</div>
                         <h2 class="section__title">
-                            Easy to <span style="color: purple">Get Started.</span>
+                            Easy to <span style="color: #6415ff">Get Started.</span>
                         </h2>
                         <div class="steps__lists">
                             <div class="step">
@@ -244,7 +245,7 @@
                     <div class="values__description">
                         <div class="section__tag">VALUES</div>
                         <h2 class="section__title">
-                            We Always Abide by Our <span style="color: purple;">Principles.</span>
+                            We Always Abide by Our <span style="color: #6415ff;">Principles.</span>
                         </h2>
                         <div class="section__para">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nnostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
@@ -284,7 +285,7 @@
                 <div class="row">
                     <div class="section__tag">pricing</div>
                     <h2 class="section__title">
-                        Reasonable and Flexible <span style="color: purple;">Plans.</span>
+                        Reasonable and Flexible <span style="color: #6415ff;">Plans.</span>
                     </h2>
                     <p class="section__para">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -356,7 +357,7 @@
                     <div class="testimonials__description">
                         <div class="section__tag">TESTIMONIALS</div>
                         <h2 class="section__title">
-                            Our Clients <span style="color: purple;">Love Us.</span>
+                            Our Clients <span style="color: #6415ff;">Love Us.</span>
                         </h2>
                         <p class="section__para">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua enim ad minim veniam.
@@ -382,9 +383,9 @@
                                     </div>
                                 </div>
                                 <div class="testimonial__buttons">
-                                    <button class="testimonial__button"></button>
+                                    <button class="testimonial__button"><i class="fa-solid fa-arrow-left"></i></button>
                                     <div class="divider"></div>
-                                    <button class="testimonial__button"></button>
+                                    <button class="testimonial__button"><i class="fa-solid fa-arrow-right"></i></button>
                                 </div>
                             </div>
                         </div>
@@ -413,35 +414,35 @@
     <footer>
         <div class="row footer__row">
             <div class="footer__columns">
-                <div class="footer_column">
+                <div class="footer__column">
                     <div class="footer__column--title">MAIN</div>
                     <a class="footer__column--link">Blog</a>
                     <a class="footer__column--link">FAQs</a>
                     <a class="footer__column--link">Support</a>
                     <a class="footer__column--link">About Us</a>
                 </div>
-                <div class="footer_column">
+                <div class="footer__column">
                     <div class="footer__column--title">PRODUCT</div>
                     <a class="footer__column--link">Log In</a>
                     <a class="footer__column--link">Personal</a>
                     <a class="footer__column--link">Business</a>
                     <a class="footer__column--link">Team</a>
                 </div>
-                <div class="footer_column">
+                <div class="footer__column">
                     <div class="footer__column--title">PRESS</div>
                     <a class="footer__column--link">Logos</a>
                     <a class="footer__column--link">Events</a>
                     <a class="footer__column--link">Stories</a>
                     <a class="footer__column--link">Office</a>
                 </div>
-                <div class="footer_column">
+                <div class="footer__column">
                     <div class="footer__column--title">TEAM</div>
                     <a class="footer__column--link">Career</a>
                     <a class="footer__column--link">Founders</a>
                     <a class="footer__column--link">Culture</a>
                     <a class="footer__column--link">Onboarding</a>
                 </div>
-                <div class="footer_column">
+                <div class="footer__column">
                     <div class="footer__column--title">LEGAL</div>
                     <a class="footer__column--link">GDPR</a>
                     <a class="footer__column--link">Privacy Policy</a>
@@ -459,9 +460,9 @@
                     © 2018 Treact Inc. All Rights Reserved.
                 </div>
                 <div class="footer__socials">
-                    <a class="footer__social--link"></a>
-                    <a class="footer__social--link"></a>
-                    <a class="footer__social--link"></a>
+                    <a class="footer__social--link"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a class="footer__social--link"><i class="fa-brands fa-pinterest-p"></i></a>
+                    <a class="footer__social--link"><i class="fa-brands fa-reddit"></i></a>
                 </div>
             </div>
         </div>
